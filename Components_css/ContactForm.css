@@ -1,0 +1,115 @@
+/* عام */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* تصميم الحاوية */
+.form-container {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+/* تنسيق المدخلات */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0077b6;
+}
+
+/* تنسيق الرسائل */
+.form-group p {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+/* زر الإرسال */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #2596be;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d7ca6;
+}
+
+/* تصميم العمود الآخر */
+.left-column {
+  flex: 1;
+  max-width: 50%;
+  background: url("path/to/mofite.jpg") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 80vh;
+}
+
+/* تصميم الحاوية الرئيسية */
+.contact-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.contact-form-container .left-column,
+.contact-form-container .form-container {
+  min-width: 300px;
+}
+
+/* استجابة الشاشات */
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column,
+  .form-container {
+    max-width: 100%;
+  }
+
+  .form-container {
+    margin-top: 20px;
+  }
+}

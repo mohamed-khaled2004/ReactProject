@@ -1,0 +1,53 @@
+.counter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* إضافة مسافة بين العناصر */
+}
+
+.counter-box {
+    height: 10vh;
+    width: 15vw;
+    margin: 0.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+}
+.social-icon {
+    display: inline-block;
+    font-size: 2rem; /* الحجم */
+    background-color: #4267B2; /* لون خلفية فيسبوك */
+    padding: 10px;
+    border-radius: 50%; /* لجعل الأيقونة دائرية */
+    color: white; /* لون الأيقونة */
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #365899; /* اللون عند المرور على الأيقونة */
+}
+
+/* شاشة تابلت */
+@media (max-width: 768px) {
+    .counter-container {
+        width: 80vw;
+    }
+    .counter-box {
+        width: 25vw; /* يظهر كل صف بعرض أكبر للتابلت */
+    }
+}
+
+/* شاشة موبايل */
+@media (max-width: 375px) {
+    .counter-container {
+        width: 90vw;
+    }
+    .counter-box {
+        width: 20vw; /* يجعل العنصرين يظهران بجانب بعضهما */
+    }
+}
+
+

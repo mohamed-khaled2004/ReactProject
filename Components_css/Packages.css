@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    gap: 16px; /* المسافة بين الكروت */
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr); /* صفين (تابلت) */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr); /* 3 أعمدة (ديسكتوب) */
+    }
+  }
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-text {
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .card {
+    opacity: 0;
+    transform: translateY(50px); /* بداية الكارد خارج الشاشة */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* إضافة الأنيمشن */
+  }
+  .card {
+    opacity: 0;
+    transform: translateY(50px); /* بداية الكارد بعيدًا عن مكانه */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* تطبيق الأنيمشن */
+  }
+#bton:hover {
+  background: hsla(0, 0%, 100%, 0); /* خلفية شفافة */
+  border: 2px solid rgb(0, 72, 255); /* إطار بلون أزرق */
+  color: blue; /* لون النص أزرق */
+  transition: all 0.3s ease; /* تأثير الانتقال */
+}
+dev .container .rew .card #bton{
+  background: hsla(184, 96%, 29%, 0.696); /* خلفية شفافة */
+  /* border: 2px solid rgb(0, 72, 255); إطار بلون أزرق */
+  color: blue; /* لون النص أزرق */
+  transition: all 0.3s ease; /* تأثير الانتقال */
+}

@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Card {
+  min-width: 280px; 
+}
+
+.CardImg {
+  height: 30px;
+  max-width: 50px;
+}
+.fitness-card .card-image{
+  width: 50px;
+}
+
+.page-container {
+
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0077b6;
+  overflow: auto;
+
+}
+
+.content-container {
+  width: 80vw;
+  height: 50vh;
+}
+
+.title-container .title {
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+.card-image {
+  width: 50px;
+  height: 50px;
+}

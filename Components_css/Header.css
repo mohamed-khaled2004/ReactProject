@@ -1,0 +1,122 @@
+/* عناصر رئيسية */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* حاوية الصفحة */
+#landing-page-hero {
+  height: 100vh;
+  position: relative;
+  bottom: 8px;
+}
+
+/* الخلفية الكاملة للفيديو */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* تأكد من أن الفيديو في الخلف */
+}
+
+/* إضافة طبقة خفيفة فوق الفيديو */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* طبقة خفيفة مع شفافية 0.2 */
+  z-index: 0;
+}
+
+
+
+.text-container h1 {
+  width: 70vw;
+  animation: slideInLeft 1s ease-in-out; /* تأثير النص العنوان */
+}
+
+.text-container p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  animation: slideInUp 1s ease-in-out; /* تأثير النص الفرعي */
+}
+
+/* أزرار */
+.btn-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-container button {
+  margin: 10px;
+}
+
+
+
+
+
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000ec;
+  z-index: 9999;
+  animation: fadeIn 2s ease-in-out; /* تطبيق الأنيمشن */
+}
+
+.loading-image {
+  width: 100px; /* أو أي حجم مناسب للصورة */
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* حركة fadeIn للصفحة */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}

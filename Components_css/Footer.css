@@ -1,0 +1,35 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .footer-section {
+    max-width: 300px; /* تحديد العرض الأقصى لكل قسم على الشاشات الكبيرة */
+    flex: 1 1 300px; /* لضمان التمدد المرن */
+    color: black;
+  }
+  
+  p, h4 {
+    color: #000000;
+  }
+  
+  a {
+    color: #170000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-section {
+      max-width: 100%; /* عرض كامل للشاشات الصغيرة */
+      margin-bottom: 15px;
+    }
+  
+    img {
+      width: 30%;
+      height: auto;
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* خلفية سوداء */
+    z-index: 9999;
+  }
+  
+  .loading-image {
+    width: 150px; /* حجم الصورة */
+    animation: fade-in-out 1.5s infinite ease-in-out; /* تأثير بسيط */
+  }
+  
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  

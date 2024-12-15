@@ -1,0 +1,41 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-md-8 {
+      width: 100%;
+    }
+  }
+
+  /* .accordion-button:not(.collapsed)::after {
+    content: "-"; 
+  }
+  
+  .accordion-button.collapsed::after {
+    content: "+";
+  }
+  .accordion-button::after {
+    content: "";
+  } */
